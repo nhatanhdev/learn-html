@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* commom///////////////////////// */
+
+a {
+    text-decoration: none;
+}
+
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0 16px;
+    min-width: 118px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+    border-radius: 24.5px;
+    background-color: #171100;
+    font-weight: 600;
+
+}
+
+/* header//////////////////////////////////////////// */
+
+.header {
+    background: #FFFCF4;
+
+}
+
+.header.fixed {
+    position: sticky;
+    top: -26px;
+}
+
+.header .body-header {
+    display: flex;
+    align-items: center;
+    padding: 36px 0 8px;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav a {
+    font-size: 1.6rem;
+    color: #5F5B53;
+    padding: 8px 23px;
+    position: relative;
+
+}
+
+.nav li.active a,
+.nav a:hover {
+    font-size: 1.6rem;
+    color: #171100;
+    /* font-weight: 600; */
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.nav li.active a::after {
+    position: absolute;
+    left: 24px;
+    bottom: 6px;
+    display: block;
+    content: "";
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #171100;
+
+}
+
+.header .btn-sign-up {
+    min-width: 144px
+}
+
+.header .action {
+    margin-left: 49px;
+}
